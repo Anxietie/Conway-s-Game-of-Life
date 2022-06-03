@@ -1,6 +1,6 @@
 public class Clock {
-    private double time;
-    private double rate;
+    private int time;
+    private int rate;
     public Clock() {
         time = 0;
         rate = 10;
