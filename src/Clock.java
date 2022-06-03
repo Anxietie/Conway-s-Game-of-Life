@@ -3,22 +3,22 @@ public class Clock {
     private double rate;
     public Clock() {
         time = 0;
-        rate = 0.10;
+        rate = 10;
     }
     public void update() {
-        if (time >= 1) time = 0;
+        if (time >= 100) time = 0;
         time += rate;
     }
     public void setRate(double r) {
         rate = r;
     }
-    public double getTime() {
+    public int getTime() {
         return time;
     }
     public boolean tick() {
-        return time >= 1.0;
+        return time >= 100;
     }
-    public double getRate() {
+    public int getRate() {
         return rate;
     }
 }
