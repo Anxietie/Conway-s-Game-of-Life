@@ -74,9 +74,9 @@ public class Game {
             if (key == GLFW_KEY_C && action == GLFW_RELEASE)
                 killCells();
             if (key == GLFW_KEY_UP && action == GLFW_RELEASE)
-                if (timer.getRate() < 0.30) timer.setRate(timer.getRate()+0.05);
+                if (timer.getRate() < 30) timer.setRate(timer.getRate()+5);
             if (key == GLFW_KEY_DOWN && action == GLFW_RELEASE)
-                if (timer.getRate() > 0.10) timer.setRate(timer.getRate()-0.05);
+                if (timer.getRate() > 10) timer.setRate(timer.getRate()-5);
         });
 
         // Set up a mouse callback. It will be called every time the mouse is clicked, repeated, or released.
